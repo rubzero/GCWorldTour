@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_main_artist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/fab_margin"
+    android:background="@color/colorBack">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/fab_margin"
+            tools:context=".ArtistActivity">
+
+            <LinearLayout
+                android:id="@+id/ll_title_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_name_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/kenyan"
+                    android:textSize="30sp"
+                    tools:targetApi="jelly_bean"
+                    android:layout_marginRight="@dimen/small_dimen"/>
+
+                <TextView
+                    android:id="@+id/txt_genre_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kenyan"
+                    tools:targetApi="jelly_bean"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorMenu"
+                    android:gravity="end"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:divider="?android:dividerHorizontal"
+                android:showDividers="middle"
+                android:layout_marginBottom="@dimen/menu_separator"
+                android:layout_marginTop="@dimen/menu_separator"
+                android:background="@color/colorMenu">
+
+                <include
+                    android:id="@+id/txt_desc_menu_artist"
+                    layout="@layout/text_view_menu"/>
+
+                <include
+                    android:id="@+id/txt_events_menu_artist"
+                    layout="@layout/text_view_menu"/>
+
+                <include
+                    android:id="@+id/txt_social_menu_artist"
+                    layout="@layout/text_view_menu"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/pv_youtube_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:context=".YoutubeFragment"/>
+
+            <TextView
+                android:id="@+id/txt_proverb_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+            <include
+                android:id="@+id/v_line1_artist"
+                layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_description_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/menu_separator"
+                android:layout_marginBottom="@dimen/fab_margin">
+
+                <ImageView
+                    android:id="@+id/img_image_artist"
+                    android:layout_width="@dimen/artist_image_wh"
+                    android:layout_height="@dimen/artist_image_wh"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginBottom="@dimen/line_below_image"
+                    android:paddingTop="@dimen/padding_over_image"
+                    android:layout_marginEnd="@dimen/fab_margin" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txt_description_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_image_artist"
+                    android:layout_toEndOf="@id/img_image_artist"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorWhite"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txt_description2_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_image_artist"
+                    android:layout_marginTop="@dimen/small_dimen"
+                    android:layout_marginLeft="@dimen/basic_dimen"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="@dimen/basic_dimen" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_nextevents_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next_events"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+            <include
+                android:id="@+id/v_line2_artist"
+                layout="@layout/line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_events_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"/>
+
+            <TextView
+                android:id="@+id/txt_social_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/social_networks"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+            <include
+                android:id="@+id/v_line3_artist"
+                layout="@layout/line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_social_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_youtube_artist"
+                    android:layout_width="@dimen/social_icon"
+                    android:layout_height="@dimen/social_icon"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:background="@drawable/youtube_button" />
+
+                <Button
+                    android:id="@+id/btn_instagram_artist"
+                    android:layout_width="@dimen/social_icon"
+                    android:layout_height="@dimen/social_icon"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:background="@drawable/insta_button"/>
+
+                <Button
+                    android:id="@+id/btn_twitter_artist"
+                    android:layout_width="@dimen/social_icon"
+                    android:layout_height="@dimen/social_icon"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:background="@drawable/twitter_button"/>
+
+                <Button
+                    android:id="@+id/btn_facebook_artist"
+                    android:layout_width="@dimen/social_icon"
+                    android:layout_height="@dimen/social_icon"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:background="@drawable/facebook_button"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>

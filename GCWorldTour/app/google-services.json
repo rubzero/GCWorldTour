@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "503252129681",
+    "firebase_url": "https://myapplication-69a63.firebaseio.com",
+    "project_id": "myapplication-69a63",
+    "storage_bucket": "myapplication-69a63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503252129681:android:f4408d42b0f90e1e",
+        "android_client_info": {
+          "package_name": "com.example.rubzer.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503252129681-rp6dlgsnn9ttnpketelkl9a1si6je4mj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rubzer.myapplication",
+            "certificate_hash": "69f0e833e4e051afaa1408ac174fe5c0d6fd57de"
+          }
+        },
+        {
+          "client_id": "503252129681-d0rdb7k9gjgdmpqjrmiqq8ko6bmc2j07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rubzer.myapplication",
+            "certificate_hash": "cb7d08f8f712318aadf8d9cc80b444600840d3af"
+          }
+        },
+        {
+          "client_id": "503252129681-843kh53s6iblgcq0t9vqursv8h0uhkvh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rubzer.myapplication",
+            "certificate_hash": "ea9be066238dcf9855c95c4ef5f89ff788e6e8d3"
+          }
+        },
+        {
+          "client_id": "503252129681-db4ctu8umvfbq9urghqcunddf67tq0qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBotZlYf5cbbRpLLSL3wIrOOurc2VDDPiI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503252129681-7qc6lt5q4u10ra99l7raiqrk38vemuft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

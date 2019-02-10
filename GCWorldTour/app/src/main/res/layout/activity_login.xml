@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_main_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorBack">
+
+    <LinearLayout
+        android:id="@+id/ll_mainContent_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/fab_margin">
+
+        <include
+            android:id="@+id/txt_user_login"
+            layout="@layout/text_input_layout"/>
+
+        <include
+            android:id="@+id/txt_password_login"
+            layout="@layout/text_input_layout"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_actions_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_charCount_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorMenu"
+                android:paddingRight="@dimen/title_pad"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:text=""/>
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_submit_login"
+                android:layout_below="@id/lbl_charCount_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/lbl_charCount_login" />
+
+            <Button
+                android:id="@+id/btn_submit_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/google_submit_login"
+                android:text="@string/login"/>
+
+            <Button
+                android:id="@+id/btn_register_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_submit_login"
+                android:text="@string/register"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gcwt2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progressBar_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

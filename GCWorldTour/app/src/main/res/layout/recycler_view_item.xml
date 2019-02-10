@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/line_dimen">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_recycler_item"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_heigth"
+        app:cardCornerRadius="@dimen/small_dimenx"
+        app:cardMaxElevation="@dimen/small_dimen"
+        app:cardElevation="@dimen/line_dimen">
+
+            <RelativeLayout
+                android:background="@drawable/recycler_item_selection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_image_recycler"
+                    android:layout_width="@dimen/card_image_width"
+                    android:layout_height="@dimen/card_image_heigth"
+                    android:layout_marginTop="@dimen/general_dimen"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/txt_title_recycler"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_image_recycler"
+                    android:layout_marginTop="@dimen/basic_dimen"
+                    android:layout_marginLeft="@dimen/basic_dimenx"
+                    android:layout_marginRight="@dimen/basic_dimenx"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txt_date_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/general_dimen"
+                    android:layout_below="@id/txt_title_recycler"
+                    android:layout_marginTop="@dimen/basic_dimen"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite" />
+
+
+            </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

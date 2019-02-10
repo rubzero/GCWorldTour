@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="@dimen/menu_separator"
+    android:paddingRight="@dimen/menu_separator"
+    android:paddingEnd="@dimen/menu_separator"
+    android:paddingStart="@dimen/menu_separator"
+    android:textColor="@color/colorWhite"
+    android:background="@drawable/text_menu_selection" />

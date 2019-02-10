@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".HomeActivity"
+        tools:showIn="@layout/app_bar_home"
+        android:background="@color/colorBack"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_heigth"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                app:tabBackground="@drawable/indicator_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_myEventList_home"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_title_myEventList_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eventLists"
+
+                android:background="@color/colorMenu"
+                app:fontFamily="@font/kenyan"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/home_recycler_title"
+                android:paddingLeft="@dimen/fab_margin"/>
+
+            <TabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_mylist_home"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorMenuSelected"/>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/tab1_home"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_events_home"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_margin="@dimen/menu_separator" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab2_home"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <GridView
+                                android:id="@+id/gv_mylist_home"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:numColumns="5"
+                                android:layout_marginTop="@dimen/top_margin_gridview"
+                                android:stretchMode="columnWidth"
+                                android:gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+    </LinearLayout>

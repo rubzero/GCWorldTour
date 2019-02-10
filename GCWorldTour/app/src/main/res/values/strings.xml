@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">GCWorld Tour</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="submit">Aceptar</string>
+    <string name="register">Registrarse</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="password2">Repetir contraseña</string>
+    <string name="email">Email</string>
+    <string name="emptyField">Campo vacío</string>
+    <string name="userNamePattern">Nombre de usuario debe contener entre 3 y 15 caracteres.
+        Solo se permite - y _ como valores especiales.</string>
+    <string name="notCollisionPassword">Las contraseñas no coinciden</string>
+    <string name="weakPasswordError">Contraseña debe contener 8 caracteres, una mayúscula,
+        al menos un número y libre de espacios en blanco.</string>
+    <string name="showPassword">Mostrar contraseña</string>
+    <string name="login">Login</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="wrongCredentials">Usuario y/o contraseña incorrectos.</string>
+    <string name="wrongEmail">Email incorrecto</string>
+    <string name="duplicatedEmail">Email ya registrado</string>
+    <string name="guest">Invitado</string>
+    <string name="quit">Log out</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Descripción</string>
+    <string name="events">Eventos</string>
+    <string name="social">Social</string>
+    <string name="next_events">Próximos eventos</string>
+    <string name="genre">Género: </string>
+    <string name="social_networks">Redes sociales</string>
+    <string name="title_activity_artist_tab">ArtistTabActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="main_genre">Género main:</string>
+    <string name="artist">Artista</string>
+    <string name="location">Localización</string>
+    <string name="gallery">Galería</string>
+    <string name="related_events">Eventos relacionados</string>
+    <string name="imageGallery">Galería de imágenes</string>
+    <string name="description_event">Información de interés</string>
+    <string name="invited_artist">Artista invitado</string>
+    <string name="buy">Comprar</string>
+    <string name="more">Saber más...</string>
+    <string name="webClientId">503252129681-db4ctu8umvfbq9urghqcunddf67tq0qf.apps.googleusercontent.com</string>
+    <string name="youtubeApiKey">AIzaSyBM84nTXz0B_MpZ3I4IRdhOKpj7T1AJZ78</string>
+    <string name="app_title">GCWORLD</string>
+    <string name="app_subtittle">TOUR</string>
+    <string name="desired_events">Conciertos guardados</string>
+    <string name="desire">Asistiré</string>
+    <string name="saveInMyList">Guardar en mi lista</string>
+    <string name="myList">Mi lista</string>
+    <string name="purchased">Comprados</string>
+    <string name="myEventList">Mi lista de eventos</string>
+    <string name="addSuccess">¡Concierto añadido a tu lista de eventos!</string>
+    <string name="eventAlreadyAdded">Este evento ya está en tu lista.</string>
+    <string name="addFail">No se ha podido añadir a tu lista de eventos...</string>
+    <string name="near">Próximos</string>
+    <string name="eventLists">Listas de eventos</string>
+    <string name="removeFromList">Eliminar</string>
+    <string name="notConnected">No estás conectado a internet...</string>
+
+</resources>

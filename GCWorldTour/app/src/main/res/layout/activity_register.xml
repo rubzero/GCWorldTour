@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_main_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    android:padding="@dimen/fab_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/fab_margin">
+
+        <include
+            android:id="@+id/txt_email_register"
+            layout="@layout/text_input_layout"/>
+
+        <include
+            android:id="@+id/txt_user_register"
+            layout="@layout/text_input_layout"/>
+
+        <include
+            android:id="@+id/txt_password_register"
+            layout="@layout/text_input_layout"/>
+
+        <include
+            android:id="@+id/txt_password2_register"
+            layout="@layout/text_input_layout"/>
+
+        <CheckBox
+            android:id="@+id/cbx_showPassword_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/colorWhite"
+            android:text="@string/showPassword"/>
+
+        <Button
+            android:id="@+id/btn_submit_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="@string/register"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gcwt2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

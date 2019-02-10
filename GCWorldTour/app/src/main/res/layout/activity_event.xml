@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EventActivity"
+    android:id="@+id/sv_main_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ll_main_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/txt_title_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/kenyan"
+            android:textSize="30sp"
+            tools:targetApi="jelly_bean"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="middle"
+            android:layout_marginBottom="@dimen/menu_separator"
+            android:layout_marginTop="@dimen/menu_separator"
+            android:background="@color/colorMenu">
+
+            <include
+                android:id="@+id/txt_description_menu_event"
+                layout="@layout/text_view_menu"/>
+
+            <include
+                android:id="@+id/txt_artist_menu_event"
+                layout="@layout/text_view_menu"/>
+
+            <include
+                android:id="@+id/txt_location_menu_event"
+                layout="@layout/text_view_menu"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_youtube_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context=".YoutubeFragment"/>
+
+        <TextView
+            android:id="@+id/txt_description_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="@string/description_event"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <include
+            android:id="@+id/v_line_event"
+            layout="@layout/line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_header_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBack2"
+            android:layout_marginTop="@dimen/menu_separator"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin">
+
+            <ImageView
+                android:id="@+id/img_poster_event"
+                android:layout_width="@dimen/card_image_width2"
+                android:layout_height="@dimen/card_image_heigth2"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginEnd="@dimen/fab_margin" />
+
+            <LinearLayout
+                android:id="@+id/ll_header_content_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_poster_event"
+                android:layout_toEndOf="@id/img_poster_event"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/txt_second_title_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"/>
+
+                    <TextView
+                        android:id="@+id/txt_artist_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"/>
+
+                    <TextView
+                        android:id="@+id/txt_genre_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"/>
+
+                    <TextView
+                        android:id="@+id/txt_date_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"/>
+
+                    <TextView
+                        android:id="@+id/txt_localion_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginBottom="@dimen/fab_margin"/>
+
+                    <TextView
+                        android:id="@+id/txt_price_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:text="Precio: 25€"
+                        android:layout_gravity="right"/>
+
+                    <TextView
+                        android:id="@+id/txt_visualised_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9402 veces visto"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="right"/>
+
+                    <Button
+                        android:id="@+id/btn_purchase_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy"
+                        android:drawableRight="@drawable/ic_shopping_cart"
+                        android:drawableEnd="@drawable/ic_shopping_cart"
+                        android:layout_gravity="right"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_addToList_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saveInMyList" />
+
+        <TextView
+            android:id="@+id/txt_invited_artist_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invited_artist"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/fab_margin"/>
+
+        <include
+            android:id="@+id/v_line2_event"
+            layout="@layout/line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_artist_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/menu_separator">
+
+            <ImageView
+                android:id="@+id/img_artist_event"
+                android:layout_width="@dimen/artist_image_wh"
+                android:layout_height="@dimen/artist_image_wh"
+                android:layout_marginRight="@dimen/fab_margin"/>
+
+            <TextView
+                android:id="@+id/txt_artist_name_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_toRightOf="@id/img_artist_event"
+                android:layout_toEndOf="@id/img_artist_event" />
+
+            <TextView
+                android:id="@+id/txt_artist_genre_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="@string/main_genre"
+                android:layout_toRightOf="@id/img_artist_event"
+                android:layout_toEndOf="@id/img_artist_event"
+                android:layout_below="@id/txt_artist_name_event"/>
+
+            <TextView
+                android:id="@+id/txt_artist_description_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:layout_toRightOf="@id/img_artist_event"
+                android:layout_toEndOf="@id/img_artist_event"
+                android:layout_below="@id/txt_artist_genre_event"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/txt_artist_more_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_artist_event"
+                android:layout_toEndOf="@id/img_artist_event"
+                android:layout_below="@id/txt_artist_description_event"
+                android:textColor="@drawable/text_selection"
+                android:text="@string/more"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_location_title_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/fab_margin" />
+
+        <include
+            android:id="@+id/v_line3_event"
+            layout="@layout/line"/>
+
+        <FrameLayout
+            android:id="@+id/fl_map_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menu_separator">
+
+            <fragment
+                android:id="@+id/map_location_event"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                class="com.example.rubzer.myapplication.MapWrapper" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt_related_events_title_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="@string/related_events"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <include
+            android:id="@+id/v_line3_event"
+            layout="@layout/line"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_related_events_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/menu_separator"
+            android:layout_marginBottom="@dimen/sv_end" />
+
+    </LinearLayout>
+</ScrollView>
